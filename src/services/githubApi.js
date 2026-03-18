@@ -1,5 +1,5 @@
 const TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
-console.log("TOKEN:", process.env.REACT_APP_GITHUB_TOKEN);
+
 
 export const fetchUser = async (username) => {
   try {
