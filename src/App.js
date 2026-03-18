@@ -92,7 +92,7 @@ function App() {
         <div>
          <h2 className="highlight">Developer Score: {developerScore}</h2>
          <div className="card profile-card">
-           <img src={profile.avatar_url} width="150" />
+           <img src={profile.avatar_url} width="150" alt="profile"  />
 
            <h2>{profile.name}</h2>
 
