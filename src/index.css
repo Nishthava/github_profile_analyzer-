@@ -1,13 +1,180 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+form {
+  display: flex;
+  gap: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input {
+  flex: 1;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+  transition: 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+.search-section {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-section form {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+}
+
+.search-section input {
+  flex: 1;
+}
+
+.search-section button {
+  white-space: nowrap;
+}
+.profile-card {
+  text-align: center;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+button {
+  padding: 10px 14px;
+  border: none;
+  background: #3498db;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #2980b9;
+}input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input:focus {
+  border-color: #3498db;
+}
+.profile-card img {
+  margin-bottom: 10px;
+}
+
+.profile-card h2 {
+  margin: 10px 0;
+}
+.stat-box {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  background: #f1f3f6;
+  border-radius: 10px;
+}
+
+.stat-box h3 {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.stat-box p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+.compare-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.compare-grid .stat-box {
+  background: #ecf5ff;
+}
+.repo-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.repo-item h3 {
+  margin: 0;
+  color: #3498db;
+}
+h2 {
+  margin-bottom: 10px;
+  color: #34495e;
+}
+.highlight {
+  font-size: 20px;
+  color: #27ae60;
+  font-weight: bold;
+}
+.dropdown {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+/* Hover effect */
+.dropdown:hover {
+  border-color: #3498db;
+}
+
+/* Focus effect */
+.dropdown:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Remove ugly default arrow (optional advanced) */
+.dropdown {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Add custom arrow */
+.dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-wrapper::after {
+  content: "▼";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 12px;
+  color: #555;
 }
